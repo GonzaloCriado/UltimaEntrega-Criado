@@ -1,0 +1,79 @@
+/* Contenedor principal del ItemDetailContainer */
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Ajuste para dar espacio entre imagen y descripción */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Imagen del producto */
+.item-detail-container img {
+  max-width: 50%; /* Ajuste para hacer la imagen más grande */
+  margin: 0 20px; /* Márgenes a la izquierda y derecha de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin perder proporciones */
+}
+
+/* Contenedor de la información del producto */
+.item-detail-info {
+  max-width: 500px; /* Establecer un límite de ancho para la información */
+  padding: 20px;
+  font-size: 1.2rem; /* Aumentamos el tamaño de la fuente */
+  line-height: 1.5; /* Mejora la legibilidad */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Título del producto */
+.item-detail-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* Precio del producto */
+.item-detail-info p.price {
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Descripción del producto */
+.item-detail-info p.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Botón de compra */
+.item-detail-info button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.item-detail-info button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .item-detail-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .details-container {
+    margin-top: 20px;
+  }
+}

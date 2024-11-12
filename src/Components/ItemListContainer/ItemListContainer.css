@@ -1,0 +1,44 @@
+/* Asegúrate de que el contenedor de la lista de productos tenga un display adecuado */
+.item-list-container {
+  display: grid; /* Utilizamos grid para distribuir los productos */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creación de columnas responsivas */
+  gap: 20px; /* Espacio entre los productos */
+  padding: 20px;
+  justify-items: center; /* Centra los productos dentro de sus columnas */
+}
+
+/* Estilo para las tarjetas de productos */
+.product-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto hover en las tarjetas */
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilo de las imágenes dentro de las tarjetas */
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilo para los textos dentro de la tarjeta */
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product-card p {
+  color: #333;
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
