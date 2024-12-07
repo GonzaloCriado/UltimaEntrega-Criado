@@ -1,4 +1,5 @@
 import { useCart } from '../CartContext/CartContext';
+import './Cart.css';
 
 function Cart() {
   const { cart } = useCart();
@@ -16,6 +17,7 @@ function Cart() {
             <img src={product.thumbnail} alt={product.title} width="50" />
             <p>{product.title}</p>
             <p>Precio: ${product.price}</p>
+            <p>Cantidad: {product.quantity}</p>
           </li>
         ))}
       </ul>
